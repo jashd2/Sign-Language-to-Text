@@ -13,7 +13,7 @@ from string import ascii_uppercase
 
 class Application:
     def __init__(self):
-	self.directory = 'model'
+	self.directory = './'
         self.hs = hunspell.HunSpell('/usr/share/hunspell/en_US.dic', '/usr/share/hunspell/en_US.aff')
         self.vs = cv2.VideoCapture(0)
         self.current_image = None
